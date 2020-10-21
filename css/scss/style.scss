@@ -1,0 +1,142 @@
+@import "mixins";
+@import "variables";
+@import "layout";
+@import "paint";
+
+//mobile first
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+select {
+  background: $white-color;
+}
+
+html {
+  font-size: 10px;
+}
+
+.nav-wrapper {
+  background-color: $secondary-color;
+}
+
+.logo img {
+  height: 90px;
+}
+
+.notification::after {
+  content: "6";
+  position: absolute;
+  top: 0;
+  right: 0.3rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  color: $primary-color;
+}
+
+.user-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hambuger {
+  font-size: 3rem;
+  color: $primary-color;
+
+  :hover {
+    color: $tertiary-color;
+  }
+}
+
+//hero section
+
+.hero {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.hero-title {
+  font-size: 4.2rem;
+  letter-spacing: 0.5ch;
+}
+
+.hero-slogan {
+  font-size: 1.5rem;
+}
+
+.quoter {
+  font-style: italic;
+}
+
+.hero-form {
+  > * {
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+  }
+}
+
+.btn {
+  border-radius: 0.3rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  color: $white-color;
+  padding: 0.8rem 0.5rem;
+}
+
+.btn-primary {
+  @extend .btn;
+
+  background-color: $primary-color;
+}
+
+.btn-secondary {
+  @extend .btn;
+
+  background-color: $secondary-color;
+}
+
+//footer section
+.footer {
+  font-size: 1.5rem;
+}
+.footer-logo {
+  background-color: $tertiary-color;
+}
+@media (min-width: 768px) {
+
+  .nav-items {
+    * {
+      color: $white-color;
+      font-size: 1.5rem;
+    }
+  }
+
+  .hero-title {
+    font-size: 6rem;
+  }
+
+  .hero-slogan {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+
+  .btn-secondary {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+}
+

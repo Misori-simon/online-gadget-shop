@@ -1,0 +1,136 @@
+// modbile view
+.header {
+
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: none;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-nav > * {
+  margin: 0 0.8rem;
+  color: $white-color;
+  font-size: 1.5rem;
+}
+
+.notification {
+  height: 3rem;
+  width: 2rem;
+  padding-top: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.user-pic {
+  width: 3rem;
+  height: 3rem;
+}
+
+//hero section
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+
+}
+
+.hero > * {
+  margin: 1rem 0;
+}
+
+.hero-slogan {
+  padding: 0 1rem;
+}
+
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  > * {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+
+//footer section
+
+.footer {
+
+}
+
+.footer-logo {
+
+}
+@media (min-width: 768px) {
+  .mobile-nav,
+  .hambuger {
+    display: none;
+  }
+
+  .nav-wrapper {
+    padding: 0 2%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-items {
+    margin :0 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-form {
+    max-width: 500px;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .nav-wrapper {
+    padding: 0 5%;
+  }
+
+  .nav-items {
+    padding :0;
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero {
+    height: 30vh;
+    justify-content: center;
+  }
+
+  .hero-form {
+    max-width: none;
+    flex-direction: row;
+    justify-content: center;
+
+    > * {
+      margin: 0 0.1rem;
+    }
+  }
+
+}
