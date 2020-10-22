@@ -25,9 +25,6 @@ html {
   background-color: $secondary-color;
 }
 
-.logo img {
-  height: 90px;
-}
 
 .notification::after {
   content: "6";
@@ -108,8 +105,55 @@ html {
   font-size: 1.5rem;
 }
 .footer-logo {
-  background-color: $tertiary-color;
+  text-align: justify;
+  line-height: 2rem;
 }
+
+.footer-heading {
+  color: $primary-color;
+  text-transform: capitalize;
+  border-bottom: 2px solid $primary-color;
+}
+
+.footer-nav-items {
+  a {
+    color: $secondary-color;
+    font-size: 1.6rem;
+  }
+}
+
+.footer-form {
+  clear: both;
+  border-radius: 5px;
+  font-size: 2rem;
+
+  label {
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: capitalize;
+
+  }
+
+  select {
+    border: 1px solid $tertiary-color;
+    border-radius: 2px;
+    font-size: 1.8rem;
+  }
+}
+
+.social-list {
+  a {
+    color: $tertiary-color;
+    font-size: 1.5rem;
+  }
+
+}
+
+.credit {
+  color: $secondary-color;
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
 
   .nav-items {
@@ -127,7 +171,12 @@ html {
     font-size: 2rem;
     padding-bottom: 1rem;
   }
+  .social-list {
+    a {
+      font-size: 2rem;
+    }
 
+  }
 
 }
 
