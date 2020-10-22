@@ -1,7 +1,7 @@
 @import "mixins";
 @import "variables";
 @import "layout";
-@import "paint";
+@import "fonts";
 
 //mobile first
 * {
@@ -11,7 +11,7 @@
   text-decoration: none;
   outline: none;
   border: none;
-  font-family: 'Helvetica Neue';
+  font-family: bingo;
 }
 
 select {
@@ -256,6 +256,15 @@ color: $secondary-color;
   .hero-slogan {
     font-size: 2rem;
     padding-bottom: 1rem;
+  }
+  //ad card
+  .ad-info {
+    text-align: left;
+  }
+
+  .ad-desc {
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
   .social-list {
     a {

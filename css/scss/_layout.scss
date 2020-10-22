@@ -36,7 +36,9 @@
   position: relative;
   display: inline-block;
 }
-
+.small {
+  display: none;
+}
 .user-pic {
   width: 3rem;
   height: 3rem;
@@ -71,29 +73,33 @@
   }
 }
 //ad card
+.hot-ad {
+  margin: 1rem 0;
+  padding: 1rem;
+}
 .ad-card {
   width: 80%;
- margin: 0 auto;
- position: relative;
+ margin: 1rem auto;
+//  position: relative;
 
- &::before {
-   content: "<";
-   position: absolute;
-   left: 0;
-   top: 30%;
-  width: 4rem;
-  padding: .3rem 0;
+//  &::before {
+//    content: "<";
+//    position: absolute;
+//    left: 0;
+//    top: 30%;
+//   width: 4rem;
+//   padding: .3rem 0;
 
- }
+//  }
 
- &::after {
-  content: ">";
-  position: absolute;
-  right: 0;
-  top: 30%;
- width: 4rem;
- padding: .3rem 0;
- }
+//  &::after {
+//   content: ">";
+//   position: absolute;
+//   right: 0;
+//   top: 30%;
+//  width: 4rem;
+//  padding: .3rem 0;
+//  }
 }
 .ad-img-wrapper {
   max-width: 27rem;
@@ -120,7 +126,7 @@
 }
 .categories {
 
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 .category-head {
   @extend .footer-width-breaks;
@@ -188,6 +194,39 @@
 .promo-price {
 
   margin: 0;
+}
+
+//filters for search page
+.filters {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: $secondary-color;
+  form {
+    background-color: #eee;
+    padding: 2rem 1rem;
+  }
+}
+.filter-title {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.filter-wrap {
+  padding: 1rem 0;
+  fieldset {
+    display: inline-block;
+    padding: 0;
+    margin-right: 2rem;
+  }
+}
+.radio-wrap {
+  padding: 1rem 0;
+
+  fieldset {
+    padding: 0.5rem 0;
+  }
 }
 //footer section
 
@@ -262,6 +301,9 @@
   .hambuger {
     display: none;
   }
+  .small {
+    display: block;
+  }
 
   .nav-wrapper {
     padding: 0 2%;
@@ -281,6 +323,22 @@
 
   .hero-form {
     max-width: 500px;
+  }
+  //ad card
+  .ad-card{
+    display: flex;
+    justify-content: center;
+  }
+  .ad-img-wrapper {
+    margin: 0;
+  }
+  .ad-info {
+    margin: 0;
+    padding-left: 1rem;
+
+    .btn-primary {
+      margin-top: 2rem;
+    }
   }
 //card
 .medium {
