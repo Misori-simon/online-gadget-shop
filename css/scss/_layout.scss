@@ -70,8 +70,125 @@
     padding: 0.5rem;
   }
 }
+//ad card
+.ad-card {
+  width: 80%;
+ margin: 0 auto;
+ position: relative;
 
+ &::before {
+   content: "<";
+   position: absolute;
+   left: 0;
+   top: 30%;
+  width: 4rem;
+  padding: .3rem 0;
 
+ }
+
+ &::after {
+  content: ">";
+  position: absolute;
+  right: 0;
+  top: 30%;
+ width: 4rem;
+ padding: .3rem 0;
+ }
+}
+.ad-img-wrapper {
+  max-width: 27rem;
+  margin: 0 auto;
+}
+.ad-img {
+  @extend .item-img;
+}
+.ad-info {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+.ad-desc {
+  margin: 1rem 0;
+}
+.ad-location,
+.ad-seller {
+  margin:0.5rem 0 1rem;
+}
+//card
+.medium,
+.large {
+  display: none;
+}
+.categories {
+
+  padding: 3rem 0;
+}
+.category-head {
+  @extend .footer-width-breaks;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem!important;
+}
+
+.sub-category {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.items {
+  display: flex;
+  justify-content: space-around;
+
+}
+.item-card {
+  padding: 1rem;
+  flex: 1 1 auto;
+  margin: 0 0.8rem;
+  max-width: 26.5rem;
+  background-color: $white-color;
+  // background-color: tan;
+}
+.item-img-wrapper{
+  margin: 0.1rem auto;
+
+}
+.item-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.item-name {
+  margin-top: 1.5rem;
+}
+.item-stock {
+  margin-top: 0.4rem;
+}
+.item-location {
+  margin-top: 1rem;
+}
+.item-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.item-add-btn {
+  padding: 0.1rem 1rem ;
+}
+.item-price {
+
+}
+.promo-price {
+
+}
+.real-price {
+  padding-right: 0.5rem;
+  margin: 0;
+}
+.promo-price {
+
+  margin: 0;
+}
 //footer section
 
 .footer {
@@ -165,7 +282,10 @@
   .hero-form {
     max-width: 500px;
   }
-
+//card
+.medium {
+  display: block;
+}
   //foter section
   .footer-width-breaks {
     max-width: 72rem;
@@ -224,7 +344,10 @@
       margin: 0 0.1rem;
     }
   }
-
+//card
+.large {
+  display: block;
+}
 
   //foter section
   .footer-width-breaks {
