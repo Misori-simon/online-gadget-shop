@@ -23,16 +23,11 @@ html {
   background-color: $secondary-color;
 }
 
-.notification::after {
-  content: "6";
-  position: absolute;
-  top: 0;
-  right: 0.3rem;
-  width: 0.8rem;
-  height: 0.8rem;
-  color: $primary-color;
+.user-name {
+  span {
+    font-weight: bold;
+  }
 }
-
 .user-pic img {
   width: 100%;
   height: 100%;

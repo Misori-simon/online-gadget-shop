@@ -6,9 +6,6 @@
 }
 
 // modbile view
-.header {
-
-}
 
 .nav-wrapper {
   display: flex;
@@ -42,6 +39,17 @@
   padding-top: 1rem;
   position: relative;
   display: inline-block;
+
+  &::after {
+    content: "6";
+    position: absolute;
+    top: 0;
+    right: 0.3rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    color: $primary-color;
+    font-weight: bold;
+  }
 }
 
 .small {
@@ -82,7 +90,7 @@
 }
 //ad card
 .hot-ad {
-  margin: 1rem 0;
+  margin: 2rem 0;
   padding: 1rem;
 }
 
@@ -171,7 +179,16 @@
   // background-color: tan;
 }
 
+.hover-img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out 0.2s;
+}
+
 .item-img-wrapper {
+  position: relative;
   margin: 0.1rem auto;
 }
 
@@ -402,6 +419,15 @@
     justify-content: center;
   }
 
+  .item-img-wrapper {
+    &:hover {
+      .hover-img {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out 0.2s;
+      }
+    }
+  }
+
   .ad-img-wrapper {
     margin: 0;
   }
@@ -493,7 +519,7 @@
   }
 
   .hero {
-    min-height: 30vh;
+    padding: 4rem 0;
     justify-content: center;
   }
 
