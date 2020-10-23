@@ -6,10 +6,7 @@
 //mobile first
 * {
   list-style: none;
-  margin: 0;
-  padding: 0;
   text-decoration: none;
-  outline: none;
   border: none;
   font-family: bingo;
 }
@@ -184,6 +181,39 @@ color: $secondary-color;
 
   color: $tertiary-color;
   text-decoration: line-through;
+
+}
+//filter for result page
+.filters {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: $secondary-color;
+  form {
+    background-color: #eee;
+  }
+}
+.filter-title {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+//result section
+.result-main {
+  background-color: #eee ;
+}
+.result-card {
+  background-color: rgb(255, 255, 255);
+}
+.result-info {
+  font-size: 1.5rem;
+  color: $secondary-color;
+}
+.result-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+
+}
+
+.result-desc {
 
 }
 //footer section

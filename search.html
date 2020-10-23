@@ -78,83 +78,274 @@
     </div>
   </header>
 
-  <main>
-    <section class="filters">
-      <form action="self">
-        <div class="filter-wrap">
-          <label class="filter-title"> Color </label>
-          <fieldset>
-            <input type="checkbox" id="Black">
-            <label for="Black">Black</label>
-          </fieldset>
-          <fieldset>
-            <input type="checkbox" id="Blue">
-            <label for="Blue">Blue</label>
-          </fieldset>
-          <fieldset>
-            <input type="checkbox" id="other">
-            <label for="other">Other</label>
-          </fieldset>
+  <main class="result-main">
+    <div class="result-main-wrapper footer-width-breaks">
+      <section class="filters">
+        <form action="self">
+          <div class="filter-wrap">
+            <label class="filter-title"> Color </label>
+            <fieldset>
+              <input type="checkbox" id="Black">
+              <label for="Black">Black</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="Blue">
+              <label for="Blue">Blue</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="other">
+              <label for="other">Other</label>
+            </fieldset>
+          </div>
+          <div class="filter-wrap">
+            <label class="filter-title"> Item </label>
+            <fieldset>
+              <input type="checkbox" id="suit">
+              <label for="suit">Suits</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="Shoe">
+              <label for="Shoe">Shoe</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="Shirt">
+              <label for="Shirt">Shirt</label>
+            </fieldset>
+          </div>
+          <div class="filter-wrap">
+            <label class="filter-title"> Brand </label>
+            <fieldset>
+              <input type="checkbox" id="Zara">
+              <label for="Zara">Zara</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="lv">
+              <label for="lv">Luis Vutton</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="prada">
+              <label for="prada">Prada</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="gucci">
+              <label for="gucci">Gucci</label>
+            </fieldset>
+          </div>
+          <div class="radio-wrap">
+            <label class="filter-title"> Price Range </label>
+            <fieldset>
+              <input type="radio" name="price-range" id="200">
+              <label for="200">$1 - $200</label>
+            </fieldset>
+            <fieldset>
+              <input type="radio" name="price-range" id="400">
+              <label for="400">$200 - $400</label>
+            </fieldset>
+            <fieldset>
+              <input type="radio" name="price-range" id="600">
+              <label for="600">$400 - $600</label>
+            </fieldset>
+            <fieldset>
+              <input type="radio" name="price-range" id="800">
+              <label for="800">$600 - $800</label>
+            </fieldset>
+            <fieldset>
+              <input type="radio" name="price-range" id="1000">
+              <label for="1000">$800 - $1,000</label>
+            </fieldset>
+          </div>
+        </form>
+      </section>
+
+      <section class="results">
+        <div class="result-card-wrapper">
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sht-52.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Cotton Fly-Front Dress Shirt</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Buea</p>
+              <p class="result-date"> 14 Sep 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sh-51.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Black Patent Leather Shoes</p>
+              <p class="item-stock">Out of Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Nairobi</p>
+              <p class="result-date"> 14 Jun 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/st-52.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Burgundy Shawl Jacket Tuxedo</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Vernice</p>
+              <p class="result-date"> 19 May 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sh-61.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Brown Leather Shoes</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Lagos</p>
+              <p class="result-date"> 23 Apr 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/st-62.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Midnight Shawl Tuxedo</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Mumbai</p>
+              <p class="result-date"> 14 Oct 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sht-61.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Wing Collar Fly-Front Dress Shirts</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> London</p>
+              <p class="result-date"> 04 Sep 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/st-22.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Navy Suit</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Paris</p>
+              <p class="result-date"> 13 Sep 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sh-51.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Black Patent Leather Shoes</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Buea</p>
+              <p class="result-date"> 14 Sep 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="filter-wrap">
-          <label class="filter-title"> Item </label>
-          <fieldset>
-            <input type="checkbox" id="suit">
-            <label for="suit">Suits</label>
-          </fieldset>
-          <fieldset>
-            <input type="checkbox" id="Shoe">
-            <label for="Shoe">Shoe</label>
-          </fieldset>
-          <fieldset>
-            <input type="checkbox" id="Shirt">
-            <label for="Shirt">Shirt</label>
-          </fieldset>
-        </div>
-        <div class="filter-wrap">
-          <label class="filter-title"> Brand </label>
-          <fieldset>
-            <input type="checkbox" id="Zara">
-            <label for="Zara">Zara</label>
-          </fieldset>
-          <fieldset>
-            <input type="checkbox" id="lv">
-            <label for="lv">Luis Vutton</label>
-          </fieldset>
-          <fieldset>
-            <input type="checkbox" id="prada">
-            <label for="prada">Prada</label>
-          </fieldset>
-          <fieldset>
-            <input type="checkbox" id="gucci">
-            <label for="gucci">Gucci</label>
-          </fieldset>
-        </div>
-        <div class="radio-wrap">
-          <label class="filter-title"> Price Range </label>
-          <fieldset>
-            <input type="radio" name="price-range" id="200">
-            <label for="200">$1 - $200</label>
-          </fieldset>
-          <fieldset>
-            <input type="radio" name="price-range" id="400">
-            <label for="400">$200 - $400</label>
-          </fieldset>
-          <fieldset>
-            <input type="radio" name="price-range" id="600">
-            <label for="600">$400 - $600</label>
-          </fieldset>
-          <fieldset>
-            <input type="radio" name="price-range" id="800">
-            <label for="800">$600 - $800</label>
-          </fieldset>
-          <fieldset>
-            <input type="radio" name="price-range" id="1000">
-            <label for="1000">$800 - $1,000</label>
-          </fieldset>
-        </div>
-      </form>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
