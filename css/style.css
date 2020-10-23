@@ -401,6 +401,8 @@
     min-width: 20rem;
   }
   .filters form {
+    position: sticky;
+    top: 0;
     padding-left: 2rem;
   }
 

@@ -456,6 +456,8 @@
     min-width: 20rem;
 
     form {
+      position: sticky;
+      top: 0;
       padding-left: 2rem;
     }
   }

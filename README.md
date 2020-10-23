@@ -10,7 +10,7 @@ I have used sass preprosessor to design an online fashion shop. Inspired by the 
 
 The project is about developing a responsive online store of atleast two pages, home page and the result pages.
 
-![screenshot](./images/app_screenshot.png)
+![screenshot](./images/sreenshot.png)
 
 The features of this project are listed as below:
 1. Website has a header:
