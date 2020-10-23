@@ -32,7 +32,9 @@ The features of this project are listed as below:
 
 ## Live Demo
 
-[Live Demo Link](https://misori-simon.github.io/online-gadget-shop/) <br>
+[Live Demo Link](https://misori-simon.github.io/online-gadget-shop/)
+
+## Video Presentation
 [Video presentation](https://www.loom.com/share/a1c19cd3e1294487b0fc66de8bd28bfd)
 
 
