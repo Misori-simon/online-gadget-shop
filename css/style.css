@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.hide {
+  display: none;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -88,9 +92,32 @@
   padding: 1rem;
 }
 
+.ad-heading {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 .ad-card {
   width: 80%;
   margin: 1rem auto;
+  position: relative;
+}
+.ad-card::before {
+  content: "<";
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 4rem;
+  padding: 0.3rem 0;
+}
+.ad-card::after {
+  content: ">";
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 4rem;
+  padding: 0.3rem 0;
 }
 
 .ad-img-wrapper {
@@ -234,20 +261,23 @@
 
 .result-img-wrapper {
   max-width: 14.5rem;
+  position: relative;
 }
 .result-img-wrapper img {
   width: 100%;
-  height: 80%;
+  height: 100%;
   object-fit: cover;
 }
 
 .result-arrows {
+  position: absolute;
   display: flex;
   width: 8rem;
+  bottom: 0;
+  right: 0;
   justify-content: space-around;
   align-items: center;
-  float: right;
-  background-color: #383838;
+  background-color: rgba(56, 56, 56, 0.5);
 }
 .result-arrows .iconify {
   font-size: 3rem;
@@ -363,10 +393,21 @@
   }
 
   .hero-form {
-    max-width: 500px;
+    max-width: 50rem;
   }
 
-  .ad-card {
+  .ad-card::before {
+    left: -6rem;
+  }
+  .ad-card::after {
+    right: -6rem;
+  }
+
+  .ad-heading {
+    max-width: 70rem;
+  }
+
+  .ad-content-wrapper {
     display: flex;
     justify-content: center;
   }
@@ -420,7 +461,9 @@
     margin: 0 auto;
   }
 
-  .footer-width-breaks, .category-head {
+  .ad-card,
+.footer-width-breaks,
+.category-head {
     max-width: 72rem;
   }
 
@@ -473,11 +516,20 @@
     margin: 0 0.1rem;
   }
 
+  .ad-card::before {
+    left: 1rem;
+  }
+  .ad-card::after {
+    right: 1rem;
+  }
+
   .large {
     display: block;
   }
 
-  .footer-width-breaks, .category-head {
+  .ad-card,
+.footer-width-breaks,
+.category-head {
     max-width: 114rem;
   }
 
@@ -490,6 +542,9 @@
   }
   .footer-form form {
     flex-direction: column;
+  }
+  .footer-form input {
+    padding: 0 1.5rem;
   }
 
   .footer-bottom {
