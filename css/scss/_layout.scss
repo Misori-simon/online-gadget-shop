@@ -43,9 +43,11 @@
   position: relative;
   display: inline-block;
 }
+
 .small {
   display: none;
 }
+
 .user-pic {
   width: 3rem;
   height: 3rem;
@@ -58,7 +60,6 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
-
 }
 
 .hero > * {
@@ -84,74 +85,83 @@
   margin: 1rem 0;
   padding: 1rem;
 }
+
 .ad-card {
   width: 80%;
- margin: 1rem auto;
-//  position: relative;
+  margin: 1rem auto;
+  //  position: relative;
 
-//  &::before {
-//    content: "<";
-//    position: absolute;
-//    left: 0;
-//    top: 30%;
-//   width: 4rem;
-//   padding: .3rem 0;
+  //  &::before {
+  //    content: "<";
+  //    position: absolute;
+  //    left: 0;
+  //    top: 30%;
+  //   width: 4rem;
+  //   padding: .3rem 0;
 
-//  }
+  //  }
 
-//  &::after {
-//   content: ">";
-//   position: absolute;
-//   right: 0;
-//   top: 30%;
-//  width: 4rem;
-//  padding: .3rem 0;
-//  }
+  //  &::after {
+  //   content: ">";
+  //   position: absolute;
+  //   right: 0;
+  //   top: 30%;
+  //  width: 4rem;
+  //  padding: .3rem 0;
+  //  }
 }
+
 .ad-img-wrapper {
   max-width: 27rem;
   margin: 0 auto;
 }
+
 .ad-img {
   @extend .item-img;
 }
+
 .ad-info {
   max-width: 42rem;
   margin: 0 auto;
 }
+
 .ad-desc {
   margin: 1rem 0;
 }
+
 .ad-location,
 .ad-seller {
-  margin:0.5rem 0 1rem;
+  margin: 0.5rem 0 1rem;
 }
 //card
 .medium,
 .large {
   display: none;
 }
-.categories {
 
+.categories {
   padding: 3rem 1rem;
 }
+
 .category-head {
   @extend .footer-width-breaks;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem!important;
+  margin-bottom: 2rem !important;
 }
 
 .sub-category {
   display: inline-block;
   margin-left: 1rem;
 }
+
 .items {
   display: flex;
   justify-content: space-around;
-
 }
+
 .item-card {
   padding: 1rem;
   flex: 1 1 auto;
@@ -160,24 +170,29 @@
   background-color: $white-color;
   // background-color: tan;
 }
-.item-img-wrapper{
-  margin: 0.1rem auto;
 
+.item-img-wrapper {
+  margin: 0.1rem auto;
 }
+
 .item-img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 .item-name {
   margin-top: 1.5rem;
 }
+
 .item-stock {
   margin-top: 0.4rem;
 }
+
 .item-location {
   margin-top: 1rem;
 }
+
 .item-controls {
   display: flex;
   justify-content: space-between;
@@ -186,42 +201,40 @@
 }
 
 .item-add-btn {
-  padding: 0.1rem 1rem ;
+  padding: 0.1rem 1rem;
 }
-.item-price {
 
-}
-.promo-price {
-
-}
 .real-price {
   padding-right: 0.5rem;
   margin: 0;
 }
-.promo-price {
 
+.promo-price {
   margin: 0;
 }
 
 //filters for search page
 .filters {
-
   form {
     padding: 2rem 1rem;
   }
 }
+
 .filter-title {
   display: block;
   margin-bottom: 1rem;
 }
+
 .filter-wrap {
   padding: 1rem 0;
+
   fieldset {
     display: inline-block;
     padding: 0;
     margin-right: 2rem;
   }
 }
+
 .radio-wrap {
   padding: 1rem 0;
 
@@ -233,18 +246,17 @@
 .result-main {
   padding: 1rem;
 }
-.result-card {
-  margin: 2rem 0;
-}
+
 .result-card {
   display: flex;
   padding: 1rem 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
+
 .result-img-wrapper {
   max-width: 14.5rem;
 
-  img{
+  img {
     width: 100%;
     height: 80%;
     object-fit: cover;
@@ -264,6 +276,7 @@
     color: $primary-color;
   }
 }
+
 .result-info {
   padding-left: 1rem;
 }
@@ -275,15 +288,18 @@
 .result-control {
   margin: 0.7rem 0;
 }
+
 .result-control {
   display: flex;
   justify-content: space-between;
 }
+
 //footer section
 
 .footer {
   font-size: 1.5rem;
 }
+
 .footer-logo {
   padding: 1rem 2rem 2rem;
 
@@ -298,18 +314,21 @@
     max-width: 200px;
   }
 }
-.footer-nav-parent {
- display: flex;
- justify-content: space-between;
- padding: 1rem 2rem;
 
+.footer-nav-parent {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
+
 .footer-heading {
   padding-bottom: 0.3rem;
 }
+
 .footer-nav {
   padding: 0.5rem 0;
 }
+
 .footer-nav-items {
   padding: 0.3rem 0;
 }
@@ -326,7 +345,6 @@
   select {
     padding: 0.4rem 0.3rem;
     width: 70%;
-
   }
 }
 
@@ -334,13 +352,13 @@
   display: flex;
   padding: 1rem 1.5rem;
 }
+
 .social-list {
   display: flex;
 
   li {
     margin: 0 0.4rem;
   }
-
 }
 
 .footer-width-breaks {
@@ -353,6 +371,7 @@
   .hambuger {
     display: none;
   }
+
   .small {
     display: block;
   }
@@ -368,7 +387,7 @@
   }
 
   .nav-items {
-    margin :0 1rem;
+    margin: 0 1rem;
     display: flex;
     align-items: center;
   }
@@ -376,14 +395,17 @@
   .hero-form {
     max-width: 500px;
   }
+
   //ad card
-  .ad-card{
+  .ad-card {
     display: flex;
     justify-content: center;
   }
+
   .ad-img-wrapper {
     margin: 0;
   }
+
   .ad-info {
     margin: 0;
     padding-left: 1rem;
@@ -392,42 +414,47 @@
       margin-top: 2rem;
     }
   }
-//card
-.medium {
-  display: block;
-}
 
-//result page
-.result-main-wrapper {
-  display: flex;
-  padding: 2rem
-}
-.filters {
-  min-width: 20rem;
-
-  form {
-    padding-left: 2rem;
-  }
-}
-.filter-wrap {
-  fieldset {
+  //card
+  .medium {
     display: block;
-    margin: 0.5rem 0;
   }
-}
-.result-card-wrapper {
+
+  //result page
+  .result-main-wrapper {
+    display: flex;
+    padding: 2rem;
+  }
+
+  .filters {
+    min-width: 20rem;
+
+    form {
+      padding-left: 2rem;
+    }
+  }
+
+  .filter-wrap {
+    fieldset {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
+
+  .result-card-wrapper {
     max-width: 70rem;
     margin: 0 auto;
-}
-.results {
-  margin: 0 auto;
-}
+  }
+
+  .results {
+    margin: 0 auto;
+  }
   //foter section
   .footer-width-breaks {
     max-width: 72rem;
   }
 
-  .footer-top{
+  .footer-top {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -440,6 +467,7 @@
 
   .footer-form {
     width: 100%;
+
     form {
       display: flex;
     }
@@ -452,15 +480,13 @@
   }
 }
 
-
 @media (min-width: 1024px) {
-
   .nav-wrapper {
     padding: 0 5%;
   }
 
   .nav-items {
-    padding :0;
+    padding: 0;
     margin: 0 2rem;
     display: flex;
     align-items: center;
@@ -480,28 +506,27 @@
       margin: 0 0.1rem;
     }
   }
-//card
-.large {
-  display: block;
-}
+
+  //card
+  .large {
+    display: block;
+  }
 
   //foter section
   .footer-width-breaks {
     max-width: 114rem;
   }
 
-  .footer-top{
-
+  .footer-top {
     flex-wrap: nowrap;
   }
+
   .footer-form {
     width: auto;
+
     form {
-
       flex-direction: column;
-
     }
-
   }
 
   .footer-bottom {

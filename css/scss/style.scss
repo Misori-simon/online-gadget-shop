@@ -8,7 +8,7 @@
   list-style: none;
   text-decoration: none;
   border: none;
-  font-family: bingo;
+  font-family: bingo, sans-serif;
 }
 
 select {
@@ -22,7 +22,6 @@ html {
 .nav-wrapper {
   background-color: $secondary-color;
 }
-
 
 .notification::after {
   content: "6";
@@ -101,22 +100,23 @@ html {
 .ad-card {
   &::before,
   &::after {
-   border: 2px solid $tertiary-color;
-   border-radius: 50%;
-   text-align: center;
+    border: 2px solid $tertiary-color;
+    border-radius: 50%;
+    text-align: center;
     font-size: 3rem;
     color: $primary-color;
     font-weight: bold;
   }
 }
+
 .ad-info {
   text-align: center;
   font-size: 1.5rem;
   color: $tertiary-color;
-
 }
+
 .ad-name {
-  a{
+  a {
     color: $primary-color;
     font-size: 2rem;
     font-weight: bold;
@@ -126,23 +126,29 @@ html {
 .categories {
   background-color: #eee;
 }
-.category-head{
+
+.category-head {
   border-bottom: 1px solid $tertiary-color;
 }
+
 .category-heading {
-color: $secondary-color;
+  color: $secondary-color;
 }
+
 .sub-category {
   font-size: 1.5rem;
   font-weight: normal;
 }
+
 .view-all {
   color: $primary-color;
   font-size: 1.3rem;
 }
+
 .item-card {
   box-shadow: 0.2rem 0.2rem 1rem 0 $tertiary-color;
 }
+
 .item-name {
   a {
     color: $secondary-color;
@@ -150,16 +156,19 @@ color: $secondary-color;
     font-weight: bold;
   }
 }
+
 .item-stock {
   font-size: 1.5rem;
   color: $primary-color;
   font-weight: bold;
 }
+
 .item-location {
   font-size: 1.5rem;
   color: $tertiary-color;
   font-weight: bold;
 }
+
 .item-add-btn {
   border: 1px solid $tertiary-color;
   color: $tertiary-color;
@@ -172,6 +181,7 @@ color: $secondary-color;
     color: $white-color;
   }
 }
+
 .promo-price {
   @extend .item-stock;
 }
@@ -181,45 +191,47 @@ color: $secondary-color;
 
   color: $tertiary-color;
   text-decoration: line-through;
-
 }
+
 //filter for result page
 .filters {
   font-size: 1.5rem;
   letter-spacing: 1px;
   color: $secondary-color;
+
   form {
     background-color: #eee;
   }
 }
+
 .filter-title {
   font-weight: bold;
   font-size: 1.7rem;
 }
 //result section
 .result-main {
-  background-color: #eee ;
+  background-color: #eee;
 }
+
 .result-card {
   background-color: rgb(255, 255, 255);
 }
+
 .result-info {
   font-size: 1.5rem;
   color: $secondary-color;
 }
+
 .result-title {
   font-size: 1.8rem;
   font-weight: bold;
-
 }
 
-.result-desc {
-
-}
 //footer section
 .footer {
   font-size: 1.5rem;
 }
+
 .footer-logo {
   text-align: justify;
   line-height: 2rem;
@@ -247,7 +259,6 @@ color: $secondary-color;
     color: $primary-color;
     font-weight: bold;
     text-transform: capitalize;
-
   }
 
   select {
@@ -262,7 +273,6 @@ color: $secondary-color;
     color: $tertiary-color;
     font-size: 1.5rem;
   }
-
 }
 
 .credit {
@@ -271,7 +281,6 @@ color: $secondary-color;
 }
 
 @media (min-width: 768px) {
-
   .nav-items {
     * {
       color: $white-color;
@@ -296,21 +305,17 @@ color: $secondary-color;
     font-size: 1.6rem;
     line-height: 2rem;
   }
+
   .social-list {
     a {
       font-size: 2rem;
     }
-
   }
-
 }
 
 @media (min-width: 1024px) {
-
   .btn-secondary {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-
 }
-

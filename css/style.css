@@ -208,13 +208,9 @@
 }
 
 .result-card {
-  margin: 2rem 0;
-}
-
-.result-card {
   display: flex;
   padding: 1rem 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .result-img-wrapper {
@@ -490,7 +486,7 @@
   list-style: none;
   text-decoration: none;
   border: none;
-  font-family: bingo;
+  font-family: bingo, sans-serif;
 }
 
 select {
