@@ -50,7 +50,7 @@ The features of this project are listed as below:
 
 ### (optional) set sass to watch changes like so: sass --watch css/scss/style.scss css/style.css
 
-### the above step is neccesary to continue styling in sass
+### the above step is necessary to continue styling in sass
 
 
 ## Authors
