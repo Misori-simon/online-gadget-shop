@@ -1,0 +1,320 @@
+@import "mixins";
+@import "variables";
+@import "layout";
+@import "fonts";
+
+//mobile first
+* {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: bingo, sans-serif;
+}
+
+select {
+  background: $white-color;
+}
+
+html {
+  font-size: 10px;
+}
+
+.nav-wrapper {
+  background-color: $secondary-color;
+}
+
+.user-name {
+  span {
+    font-weight: bold;
+  }
+}
+
+.user-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hambuger {
+  font-size: 3rem;
+  color: $primary-color;
+
+  :hover {
+    color: $tertiary-color;
+  }
+}
+
+//hero section
+
+.hero {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.hero-title {
+  font-size: 4.2rem;
+  letter-spacing: 0.5ch;
+}
+
+.hero-slogan {
+  font-size: 1.5rem;
+}
+
+.quoter {
+  font-style: italic;
+}
+
+.hero-form {
+  > * {
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+}
+
+.btn {
+  border-radius: 0.3rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  color: $white-color;
+  padding: 0.8rem 0.5rem;
+}
+
+.btn-primary {
+  @extend .btn;
+
+  background-color: $primary-color;
+}
+
+.btn-secondary {
+  @extend .btn;
+
+  background-color: $secondary-color;
+}
+//ad card
+.ad-card {
+  &::before,
+  &::after {
+    border: 2px solid $tertiary-color;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 3rem;
+    color: $primary-color;
+    font-weight: bold;
+  }
+}
+
+.ad-info {
+  text-align: center;
+  font-size: 1.5rem;
+  color: $tertiary-color;
+}
+
+.ad-name {
+  a {
+    color: $primary-color;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+//card
+.categories {
+  background-color: #eee;
+}
+
+.category-head {
+  border-bottom: 1px solid $tertiary-color;
+}
+
+.category-heading {
+  color: $secondary-color;
+}
+
+.sub-category {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.view-all {
+  color: $primary-color;
+  font-size: 1.3rem;
+}
+
+.item-card {
+  box-shadow: 0.2rem 0.2rem 1rem 0 $tertiary-color;
+}
+
+.item-name {
+  a {
+    color: $secondary-color;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+}
+
+.item-stock {
+  font-size: 1.5rem;
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.item-location {
+  font-size: 1.5rem;
+  color: $tertiary-color;
+  font-weight: bold;
+}
+
+.item-add-btn {
+  border: 1px solid $tertiary-color;
+  color: $tertiary-color;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 1px;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white-color;
+  }
+}
+
+.promo-price {
+  @extend .item-stock;
+}
+
+.real-price {
+  @extend .item-stock;
+
+  color: $tertiary-color;
+  text-decoration: line-through;
+}
+
+//filter for result page
+.filters {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: $secondary-color;
+
+  form {
+    background-color: #eee;
+  }
+}
+
+.filter-title {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+//result section
+.result-main {
+  background-color: #eee;
+}
+
+.result-card {
+  background-color: rgb(255, 255, 255);
+}
+
+.result-info {
+  font-size: 1.5rem;
+  color: $secondary-color;
+}
+
+.result-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+//footer section
+.footer {
+  font-size: 1.5rem;
+}
+
+.footer-logo {
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.footer-heading {
+  color: $primary-color;
+  text-transform: capitalize;
+  border-bottom: 2px solid $primary-color;
+}
+
+.footer-nav-items {
+  a {
+    color: $secondary-color;
+    font-size: 1.6rem;
+  }
+}
+
+.footer-form {
+  clear: both;
+  border-radius: 5px;
+  font-size: 2rem;
+
+  label {
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  select {
+    border: 1px solid $tertiary-color;
+    border-radius: 2px;
+    font-size: 1.8rem;
+  }
+}
+
+.social-list {
+  a {
+    color: $tertiary-color;
+    font-size: 1.5rem;
+  }
+}
+
+.credit {
+  color: $secondary-color;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .nav-items {
+    * {
+      color: $white-color;
+      font-size: 1.5rem;
+    }
+  }
+
+  .hero-title {
+    font-size: 6rem;
+  }
+
+  .hero-slogan {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  //ad card
+  .ad-info {
+    text-align: left;
+  }
+
+  .ad-desc {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .social-list {
+    a {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn-secondary {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

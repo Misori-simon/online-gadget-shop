@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <title>Search</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-wrapper">
+      <ul class="nav">
+        <li class="nav-items logo">
+          <a href="index.html">
+            <img src="images/logo-tet.png" alt="fembe logo">
+          </a>
+        </li>
+        <li class="nav-items">
+          <a href="index.html">
+            <span class="iconify" data-icon="bx:bxs-home-smile" data-inline="false"></span>
+            Home
+          </a>
+        </li>
+        <li class="nav-items">
+          <a href="#">
+            <span class="iconify" data-icon="ls:tile" data-inline="false"></span>
+            Collection
+          </a>
+        </li>
+        <li class="nav-items">
+          <a href="#">
+            <span class="iconify" data-icon="clarity:shopping-cart-solid" data-inline="false"></span>
+            Purchase list
+          </a>
+        </li>
+        <li class="nav-items btn-primary"><a href="#">Post an ad</a>
+        </li>
+      </ul>
+      <ul class="mobile-nav">
+        <li class="nav-items logo">
+          <a href="index.html">
+            <img src="images/logo-tet.png" alt="fembe logo">
+          </a>
+        </li>
+      </ul>
+
+      <div class="right-nav">
+        <span class="notification small">
+          <span class="iconify" data-icon="whh:notificationtop" data-inline="false"></span>
+        </span>
+        <a href="#" class="user-name small">Ms Becks</a>
+        <figure class="user-pic">
+          <img src="images/profile.jpeg" alt="ms Becks">
+        </figure>
+        <span class="iconify hambuger" data-icon="heroicons-outline:menu" data-inline="false"></span>
+      </div>
+    </nav>
+    <!-- jumbotrin section -->
+    <div class="hero">
+      <h2 class="hero-title">FEMBE</h2>
+      <p class="hero-slogan">Search over 1,000 items available in our shop</p>
+      <form action="search.html" class="hero-form">
+        <select name="categories" id="categories">
+          <option value="All">All categories</option>
+          <option value="shirts">shirts</option>
+          <option value="shorts">shorts</option>
+          <option value="suits">Suits</option>
+          <option value="t-shirts">T-shirts</option>
+          <option value="shoes">shoes</option>
+        </select>
+        <input type="text" placeholder="Item to Search">
+        <input type="text" placeholder="Location">
+        <input type="button" class="btn-secondary" value="Search">
+      </form>
+    </div>
+  </header>
+
+  <main class="result-main">
+    <div class="result-main-wrapper footer-width-breaks">
+      <section class="filters">
+        <h2 class="hide">hidden</h2>
+        <form action="self">
+          <div class="filter-wrap">
+            <label class="filter-title"> Color </label>
+            <fieldset>
+              <input type="checkbox" id="Black">
+              <label for="Black">Black</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="Blue">
+              <label for="Blue">Blue</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="other">
+              <label for="other">Other</label>
+            </fieldset>
+          </div>
+          <div class="filter-wrap">
+            <label class="filter-title"> Item </label>
+            <fieldset>
+              <input type="checkbox" id="suit">
+              <label for="suit">Suits</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="Shoe">
+              <label for="Shoe">Shoe</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="Shirt">
+              <label for="Shirt">Shirt</label>
+            </fieldset>
+          </div>
+          <div class="filter-wrap">
+            <label class="filter-title"> Brand </label>
+            <fieldset>
+              <input type="checkbox" id="Zara">
+              <label for="Zara">Zara</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="lv">
+              <label for="lv">Luis Vutton</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="prada">
+              <label for="prada">Prada</label>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" id="gucci">
+              <label for="gucci">Gucci</label>
+            </fieldset>
+          </div>
+          <div class="radio-wrap">
+            <label class="filter-title"> Price Range </label>
+            <fieldset>
+              <input type="radio" name="price-range" id="200">
+              <label for="200">$1 - $200</label>
+            </fieldset>
+            <fieldset>
+              <input type="radio" name="price-range" id="400">
+              <label for="400">$200 - $400</label>
+            </fieldset>
+            <fieldset>
+              <input type="radio" name="price-range" id="600">
+              <label for="600">$400 - $600</label>
+            </fieldset>
+            <fieldset>
+              <input type="radio" name="price-range" id="800">
+              <label for="800">$600 - $800</label>
+            </fieldset>
+            <fieldset>
+              <input type="radio" name="price-range" id="1000">
+              <label for="1000">$800 - $1,000</label>
+            </fieldset>
+          </div>
+        </form>
+      </section>
+
+      <section class="results">
+        <h2 class="hide">hidden</h2>
+        <div class="result-card-wrapper">
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sht-52.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Cotton Fly-Front Dress Shirt</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Buea</p>
+              <p class="result-date"> 14 Sep 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sh-51.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Black Patent Leather Shoes</p>
+              <p class="item-stock">Out of Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Nairobi</p>
+              <p class="result-date"> 14 Jun 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/st-52.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Burgundy Shawl Jacket Tuxedo</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Vernice</p>
+              <p class="result-date"> 19 May 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sh-61.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Brown Leather Shoes</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Lagos</p>
+              <p class="result-date"> 23 Apr 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/st-62.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Midnight Shawl Tuxedo</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Mumbai</p>
+              <p class="result-date"> 14 Oct 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sht-61.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Wing Collar Fly-Front Dress Shirts</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> London</p>
+              <p class="result-date"> 04 Sep 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/st-22.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Navy Suit</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Paris</p>
+              <p class="result-date"> 13 Sep 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <figure class="result-img-wrapper">
+                <img src="images/sh-51.png" alt="shirt">
+                <span class="result-arrows">
+                  <span class="iconify" data-icon="dashicons:arrow-left" data-inline="false"></span>
+                  <span class="iconify" data-icon="dashicons:arrow-right" data-inline="false"></span>
+                </span>
+            </figure>
+            <div class="result-info">
+              <p class="result-title">Black Patent Leather Shoes</p>
+              <p class="item-stock">In Stock</p>
+              <p class="result-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmoi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+              <p class="result-location"><strong>Location: </strong> Buea</p>
+              <p class="result-date"> 14 Sep 2020</p>
+              <div class="result-control">
+                <button class="btn-primary">
+                  <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span>
+                  Call
+                </button>
+                <button class="btn-primary"> $244 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top footer-width-breaks">
+      <div class="footer-logo">
+        <figure>
+          <img src="images/logo-bl.png" alt="gray logo">
+        </figure>
+        <p>
+          Fembe is all about fashion. We are the leading online fashion shop for men. We believe dressing is a language in which we communicate our indentities to others passively. We are her so that you wisper the right words with your mouth shut.
+        </p>
+      </div>
+
+      <div class="footer-nav-parent">
+        <div class="footer-nav-wrap">
+          <h2 class="footer-heading">categories</h2>
+          <ul class="footer-nav">
+            <li class="footer-nav-items">
+              <a href="#">Suits</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Shirts</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Trousers</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Shorts</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">T-shirts</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Shoes</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Belts</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Socks</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-wrap">
+          <h2 class="footer-heading">navigation</h2>
+          <ul class="footer-nav">
+            <li class="footer-nav-items">
+              <a href="#">Home</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Login</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Signp</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Contact US</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Terms and Conditions</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">Help</a>
+            </li>
+            <li class="footer-nav-items">
+              <a href="#">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-form">
+        <form action="self">
+          <fieldset>
+            <label for="country">country</label>
+            <select id="country">
+              <option value="Cameroon">Cameroon</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="India">India</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Ethiopia">Ethiopia</option>
+              <option value="Turkey">Turkey</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="language">Language</label>
+            <select id="language">
+              <option value="English">English</option>
+              <option value="French">French</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="currency">currency</label>
+            <select id="currency">
+              <option value="cfa">FCFA</option>
+              <option value="usd">usd$</option>
+            </select>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom footer-width-breaks">
+      <p>Coprights &copy; 2020 Komrades Inc. All Rights Reserved. Developed by <span class="credit">Misori Simon</span>. Designed by <span class="credit">Mohammed Awad</span></p>
+      <ul class="social-list">
+        <li>
+          <a href="#">
+            <span class="iconify" data-icon="cib:facebook-f" data-inline="false"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="iconify" data-icon="ant-design:google-plus-outlined" data-inline="false"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
